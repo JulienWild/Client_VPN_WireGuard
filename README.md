@@ -1,6 +1,3 @@
-# Client_VPN_WireGuard
-Scripts d'automatisation de création de configurations VPN WireGuard
-
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com) 
 
