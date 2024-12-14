@@ -1,11 +1,4 @@
 <h1 align="center">
-[![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com) 
-</h1>
-
----
-
-
-<h1 align="center">
 🛠️  Script d'automatisation de génération des configurations des clients VPN WireGuard - Guide pour les Formateurs
 </h1>
 
