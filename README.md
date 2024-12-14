@@ -205,16 +205,31 @@ sudo ./setup_vpn_wireguard.sh
 > Le script doit être joué avec les droits **root**.
 
 
+
 Arborescence repertoire après exécution du script :
 
 ```bash
 .
 ├── ip.txt
 ├── output
-│   └── Julien_Gregoire
-│       ├── Julien_Gregoire_keys_and_procedure.tar.gz.gpg
-│       ├── Julien_Gregoire_WIREGUARD.key
-│       ├── Julien_Gregoire_WIREGUARD-public.key
+│   ├── Jean_jacques
+│   │   ├── Jean_jacques_keys.tar.gz.gpg
+│   │   ├── Jean_jacques_WIREGUARD-public.key
+│   │   ├── password.txt
+│   │   └── procedure.md
+│   ├── Jean_Marc
+│   │   ├── Jean_Marc_keys.tar.gz.gpg
+│   │   ├── Jean_Marc_WIREGUARD-public.key
+│   │   ├── password.txt
+│   │   └── procedure.md
+│   ├── Jean_Pierre
+│   │   ├── Jean_Pierre_keys.tar.gz.gpg
+│   │   ├── Jean_Pierre_WIREGUARD-public.key
+│   │   ├── password.txt
+│   │   └── procedure.md
+│   └── Julien_Gregoire 
+│       ├── Julien_Gregoire _keys.tar.gz.gpg
+│       ├── Julien_Gregoire _WIREGUARD-public.key
 │       ├── password.txt
 │       └── procedure.md
 ├── README.md
@@ -222,6 +237,7 @@ Arborescence repertoire après exécution du script :
 ├── template-procedure.md
 ├── vpn_config.sh
 └── wilders.csv
+
 ```
 
 ---
@@ -236,6 +252,14 @@ Une fois le script exécuté, les éléments suivants seront générés pour cha
 > La procédure générée indique à chaque wilder comment extraire l'archive chiffrée, et comment configuer son client VPN WireGuard.
 
 ***Le script crée aussi un fichier `ip.txt` pour suivre les adresses IPv4 de tunnel des clients déjà utilisées, afin de ne pas faire de doublons. (Crée le fichier seulement la première fois qu'on exécute le script ...)***
+
+Exemple de fichier `ip.txt` généré :
+```
+0 Julien_Gregoire  172.31.0.1 
+1 Jean_jacques 172.31.1.1 
+1 Jean_Marc 172.31.1.2 
+2 Jean_Pierre 172.31.2.1
+```
 
 
 ---
