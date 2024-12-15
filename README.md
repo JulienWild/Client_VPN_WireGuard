@@ -113,6 +113,7 @@ Dans mon cas, j'utilise le sous-réseau `172.31`, et ceci pour plusieurs raisons
 - **`DNS`** : Adresse de l'interface LAN de pfsense, pour que les clients VPN l'utilisent comme premier serveur DNS (ex. "192.168.50.254").
 - **`BASE_IP`** : Base pour les adresses des clients VPN. En fonction de la valeur de la variable `$TUNNEL_MASK` que tu as renseigné (ex. "172.31"). Cette variable va servir à générer des adresses IP pour les clients VPN, et maintiendra à jour les adresses déjà utilisées dans un fichier généré automatiquement par le script (fichier `ip.txt`).
 
+![](Variables-1.png)
 
 ✨ Voici un exemple de fichier `vpn_config.sh` :
 ```bash
